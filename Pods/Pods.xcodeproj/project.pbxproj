@@ -7,114 +7,89 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0A6C0F1253FD5D069982C0CAFEB73E28 /* EasyPeasy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCC28A3AFD6C0E00B094394D31D139F /* EasyPeasy.swift */; };
-		18CCE20473E2073D7499D885A159C3CA /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4358CB826199132014C26FA7D4BD4084 /* Utilities.swift */; };
-		228E8A3B9DD6DD73FAB125C50730C0DD /* EasyPeasy-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F766A7B2DAF9649F57A0DC93986267D1 /* EasyPeasy-dummy.m */; };
-		293831B1F84C49B8030AE3E3BE13F5DE /* TextAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5821CED1843067CC3BD3254B4744CEC0 /* TextAttributes.swift */; };
-		2ADABBC0308F5AFE8C81B471E2E964A3 /* Item+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38639D5F134930CA98A6CA6FAA03B61F /* Item+UIKit.swift */; };
-		2C676148DCF6AB763CF473F0158595A5 /* PositionAttribute+AppKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A834FEFE8C81BFA85962F65377B754 /* PositionAttribute+AppKit.swift */; };
-		37682B742EEABB88CC9C7A63F47EC910 /* UILayoutGuide+Easy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1892AB86BE9CE7BA52B3FF5FD4FA6417 /* UILayoutGuide+Easy.swift */; };
+		0A6C0F1253FD5D069982C0CAFEB73E28 /* EasyPeasy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0550C8A2952EA76569134D48FD50AAE /* EasyPeasy.swift */; };
+		2115FC0DC11136340252F215F7EB4272 /* Pods-LoadingButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CCB76F4587440BA1044DC11E02AA500D /* Pods-LoadingButton-dummy.m */; };
+		228E8A3B9DD6DD73FAB125C50730C0DD /* EasyPeasy-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D8024640261F4604D47D4C1F6770EF9 /* EasyPeasy-dummy.m */; };
+		2ADABBC0308F5AFE8C81B471E2E964A3 /* Item+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B98E10FAC9116209DDDCD7C976E0F5 /* Item+UIKit.swift */; };
+		2C676148DCF6AB763CF473F0158595A5 /* PositionAttribute+AppKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FAE89C02B37F9BD2D4C0A86E7C9A290 /* PositionAttribute+AppKit.swift */; };
+		37682B742EEABB88CC9C7A63F47EC910 /* UILayoutGuide+Easy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83109120B70867E6AB1487102DF8CCF6 /* UILayoutGuide+Easy.swift */; };
 		3CCDE2CFE9B4FA606B8BD7ECE2D86BC3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		43801C765F1F89F0526371CC0A72EE7E /* PositionAttribute+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9688D0BCAFEFD5BAA70F398E7DE48562 /* PositionAttribute+UIKit.swift */; };
-		4507027ADE0D775BD5DC6DD67A19989E /* TextAttributes-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 49CA51871D1EECBF773A021445A69981 /* TextAttributes-dummy.m */; };
-		4BF06936AE389FEE6B718E7F3DE089DA /* Pods-LoadingButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CCB76F4587440BA1044DC11E02AA500D /* Pods-LoadingButton-dummy.m */; };
-		4C7C8722E12B21B3438A21B42CD26521 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D47D24163B30F9E69FA80A05D5AE85E /* Item.swift */; };
-		62B367B169A19F7E672D0F5F7FCD995D /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B381D7AB1F74E5D17F33E448D1DD4A /* Node.swift */; };
-		850A6F74D125F766F37AB8453C5A1A09 /* CompoundAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B3561E3E8EBBCE0AE07A54B4FBFC19 /* CompoundAttribute.swift */; };
-		88886A6756C8FB57144C192F9E4C8F4A /* TextAttributes.h in Headers */ = {isa = PBXBuildFile; fileRef = 696039F938A83CD8728172C8BFD967AE /* TextAttributes.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		896422EE0994E5B0DEEF4B6B0656DC15 /* Context.swift in Sources */ = {isa = PBXBuildFile; fileRef = D670F0E960AF6B60BCA6012571B9764F /* Context.swift */; };
-		8AA7198A559ABBABAD1F639B53C3E5B3 /* DimensionAttribute+AppKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9868D0B6F9E7C7718439192184CDCC91 /* DimensionAttribute+AppKit.swift */; };
-		8B150CC17BE01710832DD4579E97EE20 /* DimensionAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48C21B07C1B3016168D38FF14066A05 /* DimensionAttribute.swift */; };
-		8EC7D899016655F8A8ABA24E5F2BBDE4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		995EC428B25FE8A006AE8CA3A1E9839F /* Attribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBAA51294488631FDB62D286563FF5C /* Attribute.swift */; };
-		9BA3531481EBDCBCD442F7A955515517 /* PositionAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7D201945B00C7116165E73821C992A /* PositionAttribute.swift */; };
-		9CA49A2B0BEAE9E56E7E698D95C7C6EE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		AB6CABBF4F8A33DC15443D1FC3BCAA98 /* Collection+Easy.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEF96FA29FE8D7EC478DF307284FB46 /* Collection+Easy.swift */; };
-		B0BC2BE348C7D7FD99DA73656523C401 /* Priority.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E277AB751025CCBDD818A3C88827B90 /* Priority.swift */; };
-		B7AF73F7D293A4D7F88A013272987FBB /* AttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9214DAB2446A9D84DC3EF7611257031 /* AttributedString.swift */; };
-		BD925728D5D2958D8DDA3B8136EEA603 /* TextAttributes-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 842C645DDD2D99DA7312AFD95907A608 /* TextAttributes-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C1D9B88439CA271E540BEF2C07BF87C7 /* DimensionAttribute+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8551CE85CC91069D0D245608D9C633 /* DimensionAttribute+UIKit.swift */; };
-		C7B3453F639ECEFE8F12A377BE736F30 /* Item+AppKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8B2E1E6E8B585D9CFF1A5336343C14 /* Item+AppKit.swift */; };
-		C9A7B319BAA4A1D427446BA5F9984A60 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4631F4D918E7CB1A3F2DF43E505CDA38 /* Constant.swift */; };
-		D6914A6156517C1BAF658E4A9A1F530F /* NSLayoutGuide+Easy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C50C76FF14570DD17479C3A7B336BBF /* NSLayoutGuide+Easy.swift */; };
-		D96D49F19E7EF8B153F2A30166E892A3 /* NSView+Easy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CBA9B311684281C1F398B5E4386335 /* NSView+Easy.swift */; };
-		DFABEB51D84B6FDCDA70A512AE217C22 /* UIView+Easy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916A02F911EDE0CBC9E165BEC61C5880 /* UIView+Easy.swift */; };
-		E305B54B4DBA79B2E23E03815858A570 /* ReferenceAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827782125ED896C2CE3E73ED0025B70A /* ReferenceAttribute.swift */; };
-		F4B645A507E1A7574F4E809CF3403DCB /* EasyPeasy-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F3D8222EBD2FC40D6B482957B8D0EAA /* EasyPeasy-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FABF7412B9503C6B2CB55B2152E7FF57 /* Pods-LoadingButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E04EAE5C34E8BE716D290733FBA14D82 /* Pods-LoadingButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		43801C765F1F89F0526371CC0A72EE7E /* PositionAttribute+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FBB8A0DF4E04D03920A7B193BBACC2 /* PositionAttribute+UIKit.swift */; };
+		4C7C8722E12B21B3438A21B42CD26521 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E97D44169F12F95D8A4D898ACEECF6 /* Item.swift */; };
+		5014345E5D5FD3DEE60427285DE78520 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		62B367B169A19F7E672D0F5F7FCD995D /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF99674F45BF27E1DCFA338017CF5A1 /* Node.swift */; };
+		850A6F74D125F766F37AB8453C5A1A09 /* CompoundAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369E0BF0D92AC8CDC1104DB816FA7BCA /* CompoundAttribute.swift */; };
+		896422EE0994E5B0DEEF4B6B0656DC15 /* Context.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BEC6824F3FDD4D90827B61A3C126659 /* Context.swift */; };
+		8AA7198A559ABBABAD1F639B53C3E5B3 /* DimensionAttribute+AppKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C00CBE818B56FB5A273558DFCBB5D7 /* DimensionAttribute+AppKit.swift */; };
+		8B150CC17BE01710832DD4579E97EE20 /* DimensionAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = F321CD9A29751CCC7E6ABFF25AD8A503 /* DimensionAttribute.swift */; };
+		995EC428B25FE8A006AE8CA3A1E9839F /* Attribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF47720512C4346131C194E20264382B /* Attribute.swift */; };
+		9BA3531481EBDCBCD442F7A955515517 /* PositionAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB923AAAFC121EA0269C423594C7AAD7 /* PositionAttribute.swift */; };
+		AB6CABBF4F8A33DC15443D1FC3BCAA98 /* Collection+Easy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BED75E2D914505929B7E8D7EB489012 /* Collection+Easy.swift */; };
+		B0BC2BE348C7D7FD99DA73656523C401 /* Priority.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62470B9827DB490FF9CA19DF6E372653 /* Priority.swift */; };
+		C1D9B88439CA271E540BEF2C07BF87C7 /* DimensionAttribute+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA58A1B1EEE768B814B9C4A98FFDD1B5 /* DimensionAttribute+UIKit.swift */; };
+		C7B3453F639ECEFE8F12A377BE736F30 /* Item+AppKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53F391BDD5FD7CBC2619818E452AB3F /* Item+AppKit.swift */; };
+		C9A7B319BAA4A1D427446BA5F9984A60 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C042423496ABF6F39448FDE1E420B79 /* Constant.swift */; };
+		D6914A6156517C1BAF658E4A9A1F530F /* NSLayoutGuide+Easy.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E5E08DA683D4ECB27FBF63FA31CFF1 /* NSLayoutGuide+Easy.swift */; };
+		D96D49F19E7EF8B153F2A30166E892A3 /* NSView+Easy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1130DF1AD73DAC2E71BFD26D78B4E486 /* NSView+Easy.swift */; };
+		DA4DE171BA8269A3949B88512717EAE7 /* Pods-LoadingButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E04EAE5C34E8BE716D290733FBA14D82 /* Pods-LoadingButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DFABEB51D84B6FDCDA70A512AE217C22 /* UIView+Easy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D969B5AD6F8D8D36DC424543752195 /* UIView+Easy.swift */; };
+		E305B54B4DBA79B2E23E03815858A570 /* ReferenceAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFF6E782F4193DD941D35A3136F2E48 /* ReferenceAttribute.swift */; };
+		F4B645A507E1A7574F4E809CF3403DCB /* EasyPeasy-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9377A39C852A1CC9C2A7885D2B2D3E45 /* EasyPeasy-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		1354BE9DAABBFBDCC6610833962190AF /* PBXContainerItemProxy */ = {
+		00873CDB6255987BFC16777E577B8D2F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 1F2F10D708910773191660761F9C8163;
 			remoteInfo = EasyPeasy;
 		};
-		83BF5BA203E4CE0D8C37B13AAF2C1CE1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = EC89E9DAB30EA56235C4F30E56BCE60F;
-			remoteInfo = TextAttributes;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0C7D201945B00C7116165E73821C992A /* PositionAttribute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PositionAttribute.swift; path = EasyPeasy/PositionAttribute.swift; sourceTree = "<group>"; };
-		0D47D24163B30F9E69FA80A05D5AE85E /* Item.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Item.swift; path = EasyPeasy/Item.swift; sourceTree = "<group>"; };
-		17B9422EC2DC1795A68F8DDEA7C5987A /* TextAttributes.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TextAttributes.modulemap; sourceTree = "<group>"; };
-		1892AB86BE9CE7BA52B3FF5FD4FA6417 /* UILayoutGuide+Easy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UILayoutGuide+Easy.swift"; path = "EasyPeasy/UILayoutGuide+Easy.swift"; sourceTree = "<group>"; };
+		02F94016182CCEC5D83EF3D37581B992 /* EasyPeasy.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = EasyPeasy.xcconfig; sourceTree = "<group>"; };
+		0BED75E2D914505929B7E8D7EB489012 /* Collection+Easy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Collection+Easy.swift"; path = "EasyPeasy/Collection+Easy.swift"; sourceTree = "<group>"; };
+		1130DF1AD73DAC2E71BFD26D78B4E486 /* NSView+Easy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSView+Easy.swift"; path = "EasyPeasy/NSView+Easy.swift"; sourceTree = "<group>"; };
+		1FFF6E782F4193DD941D35A3136F2E48 /* ReferenceAttribute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReferenceAttribute.swift; path = EasyPeasy/ReferenceAttribute.swift; sourceTree = "<group>"; };
+		2122AB916328AC7B46D9A9484251DC66 /* EasyPeasy-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EasyPeasy-prefix.pch"; sourceTree = "<group>"; };
 		29B6A8C92A680DD2A6B809621CA9E98B /* Pods-LoadingButton.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LoadingButton.release.xcconfig"; sourceTree = "<group>"; };
-		2C50C76FF14570DD17479C3A7B336BBF /* NSLayoutGuide+Easy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSLayoutGuide+Easy.swift"; path = "EasyPeasy/NSLayoutGuide+Easy.swift"; sourceTree = "<group>"; };
-		320F62725A0E4D5F3DC9DFEA606601EB /* Pods_LoadingButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LoadingButton.framework; path = "Pods-LoadingButton.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		35E78C5563D9C41BE6A24B3A0A9C14CC /* EasyPeasy.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = EasyPeasy.modulemap; sourceTree = "<group>"; };
-		380D90B787F89038B1441CE7992D5BFF /* EasyPeasy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = EasyPeasy.framework; path = EasyPeasy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		38639D5F134930CA98A6CA6FAA03B61F /* Item+UIKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Item+UIKit.swift"; path = "EasyPeasy/Item+UIKit.swift"; sourceTree = "<group>"; };
-		38CBA9B311684281C1F398B5E4386335 /* NSView+Easy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSView+Easy.swift"; path = "EasyPeasy/NSView+Easy.swift"; sourceTree = "<group>"; };
-		3E277AB751025CCBDD818A3C88827B90 /* Priority.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Priority.swift; path = EasyPeasy/Priority.swift; sourceTree = "<group>"; };
-		4358CB826199132014C26FA7D4BD4084 /* Utilities.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Utilities.swift; path = "Source/Supporting Files/Utilities.swift"; sourceTree = "<group>"; };
-		4631F4D918E7CB1A3F2DF43E505CDA38 /* Constant.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constant.swift; path = EasyPeasy/Constant.swift; sourceTree = "<group>"; };
-		49CA51871D1EECBF773A021445A69981 /* TextAttributes-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TextAttributes-dummy.m"; sourceTree = "<group>"; };
+		369E0BF0D92AC8CDC1104DB816FA7BCA /* CompoundAttribute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CompoundAttribute.swift; path = EasyPeasy/CompoundAttribute.swift; sourceTree = "<group>"; };
+		3975CA7C7BD92DA1121A35F96A3BE365 /* EasyPeasy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = EasyPeasy.framework; path = EasyPeasy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B60EE0B37C55FE3DB9CCE05E812F29D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5821CED1843067CC3BD3254B4744CEC0 /* TextAttributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextAttributes.swift; path = Source/TextAttributes.swift; sourceTree = "<group>"; };
-		58A834FEFE8C81BFA85962F65377B754 /* PositionAttribute+AppKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PositionAttribute+AppKit.swift"; path = "EasyPeasy/PositionAttribute+AppKit.swift"; sourceTree = "<group>"; };
+		4FAE89C02B37F9BD2D4C0A86E7C9A290 /* PositionAttribute+AppKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PositionAttribute+AppKit.swift"; path = "EasyPeasy/PositionAttribute+AppKit.swift"; sourceTree = "<group>"; };
 		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		62B381D7AB1F74E5D17F33E448D1DD4A /* Node.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Node.swift; path = EasyPeasy/Node.swift; sourceTree = "<group>"; };
-		672C986F748177368BC0514C2C91D7DF /* TextAttributes-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TextAttributes-prefix.pch"; sourceTree = "<group>"; };
-		696039F938A83CD8728172C8BFD967AE /* TextAttributes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TextAttributes.h; path = "Source/Supporting Files/TextAttributes.h"; sourceTree = "<group>"; };
-		6BCC28A3AFD6C0E00B094394D31D139F /* EasyPeasy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EasyPeasy.swift; path = EasyPeasy/EasyPeasy.swift; sourceTree = "<group>"; };
-		74F8E0B8CEDA5AB6980C31B5B15C8277 /* TextAttributes.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TextAttributes.xcconfig; sourceTree = "<group>"; };
-		79B3561E3E8EBBCE0AE07A54B4FBFC19 /* CompoundAttribute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CompoundAttribute.swift; path = EasyPeasy/CompoundAttribute.swift; sourceTree = "<group>"; };
-		827782125ED896C2CE3E73ED0025B70A /* ReferenceAttribute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReferenceAttribute.swift; path = EasyPeasy/ReferenceAttribute.swift; sourceTree = "<group>"; };
-		842C645DDD2D99DA7312AFD95907A608 /* TextAttributes-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TextAttributes-umbrella.h"; sourceTree = "<group>"; };
-		8AE24F32340ABCE5B8ECB18CBDBF7B4E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8F3D8222EBD2FC40D6B482957B8D0EAA /* EasyPeasy-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EasyPeasy-umbrella.h"; sourceTree = "<group>"; };
-		916A02F911EDE0CBC9E165BEC61C5880 /* UIView+Easy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Easy.swift"; path = "EasyPeasy/UIView+Easy.swift"; sourceTree = "<group>"; };
-		92A7AF99BCF27C3E80EA9663CCDC7B3D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		62470B9827DB490FF9CA19DF6E372653 /* Priority.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Priority.swift; path = EasyPeasy/Priority.swift; sourceTree = "<group>"; };
+		63B98E10FAC9116209DDDCD7C976E0F5 /* Item+UIKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Item+UIKit.swift"; path = "EasyPeasy/Item+UIKit.swift"; sourceTree = "<group>"; };
+		6D8024640261F4604D47D4C1F6770EF9 /* EasyPeasy-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "EasyPeasy-dummy.m"; sourceTree = "<group>"; };
+		6EF99674F45BF27E1DCFA338017CF5A1 /* Node.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Node.swift; path = EasyPeasy/Node.swift; sourceTree = "<group>"; };
+		7C042423496ABF6F39448FDE1E420B79 /* Constant.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constant.swift; path = EasyPeasy/Constant.swift; sourceTree = "<group>"; };
+		83109120B70867E6AB1487102DF8CCF6 /* UILayoutGuide+Easy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UILayoutGuide+Easy.swift"; path = "EasyPeasy/UILayoutGuide+Easy.swift"; sourceTree = "<group>"; };
+		88C00CBE818B56FB5A273558DFCBB5D7 /* DimensionAttribute+AppKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DimensionAttribute+AppKit.swift"; path = "EasyPeasy/DimensionAttribute+AppKit.swift"; sourceTree = "<group>"; };
+		8BEC6824F3FDD4D90827B61A3C126659 /* Context.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Context.swift; path = EasyPeasy/Context.swift; sourceTree = "<group>"; };
+		91ACF64847601D2CF038E4C491EBD132 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9377A39C852A1CC9C2A7885D2B2D3E45 /* EasyPeasy-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EasyPeasy-umbrella.h"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9688D0BCAFEFD5BAA70F398E7DE48562 /* PositionAttribute+UIKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PositionAttribute+UIKit.swift"; path = "EasyPeasy/PositionAttribute+UIKit.swift"; sourceTree = "<group>"; };
-		985BED1806B63246C4CD17A017888BDC /* EasyPeasy.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = EasyPeasy.xcconfig; sourceTree = "<group>"; };
-		9868D0B6F9E7C7718439192184CDCC91 /* DimensionAttribute+AppKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DimensionAttribute+AppKit.swift"; path = "EasyPeasy/DimensionAttribute+AppKit.swift"; sourceTree = "<group>"; };
-		9C8551CE85CC91069D0D245608D9C633 /* DimensionAttribute+UIKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DimensionAttribute+UIKit.swift"; path = "EasyPeasy/DimensionAttribute+UIKit.swift"; sourceTree = "<group>"; };
-		9D8B2E1E6E8B585D9CFF1A5336343C14 /* Item+AppKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Item+AppKit.swift"; path = "EasyPeasy/Item+AppKit.swift"; sourceTree = "<group>"; };
-		9EC50FCBD7B1D395403B7474159422E7 /* TextAttributes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TextAttributes.framework; path = TextAttributes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F82A562DD5F4CAB03F0A6C1C10BFCE2 /* Pods_LoadingButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LoadingButton.framework; path = "Pods-LoadingButton.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FC53A095B4E6BC500CF21B58378E870 /* Pods-LoadingButton-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LoadingButton-resources.sh"; sourceTree = "<group>"; };
+		A0FBB8A0DF4E04D03920A7B193BBACC2 /* PositionAttribute+UIKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PositionAttribute+UIKit.swift"; path = "EasyPeasy/PositionAttribute+UIKit.swift"; sourceTree = "<group>"; };
 		A1418297B04EAD17F8E033DD92D01A72 /* Pods-LoadingButton.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LoadingButton.debug.xcconfig"; sourceTree = "<group>"; };
 		A70D174FE6FFF0EBFD8D24E732D1C130 /* Pods-LoadingButton-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LoadingButton-acknowledgements.plist"; sourceTree = "<group>"; };
-		ACEF96FA29FE8D7EC478DF307284FB46 /* Collection+Easy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Collection+Easy.swift"; path = "EasyPeasy/Collection+Easy.swift"; sourceTree = "<group>"; };
-		ADFAFD1E728018053612BDC214C9CA92 /* EasyPeasy-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EasyPeasy-prefix.pch"; sourceTree = "<group>"; };
+		B0550C8A2952EA76569134D48FD50AAE /* EasyPeasy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EasyPeasy.swift; path = EasyPeasy/EasyPeasy.swift; sourceTree = "<group>"; };
+		B3D969B5AD6F8D8D36DC424543752195 /* UIView+Easy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Easy.swift"; path = "EasyPeasy/UIView+Easy.swift"; sourceTree = "<group>"; };
+		BB923AAAFC121EA0269C423594C7AAD7 /* PositionAttribute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PositionAttribute.swift; path = EasyPeasy/PositionAttribute.swift; sourceTree = "<group>"; };
 		C3ED253087F1E1706A04AB7582798137 /* Pods-LoadingButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LoadingButton.modulemap"; sourceTree = "<group>"; };
+		C5E97D44169F12F95D8A4D898ACEECF6 /* Item.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Item.swift; path = EasyPeasy/Item.swift; sourceTree = "<group>"; };
 		CCB76F4587440BA1044DC11E02AA500D /* Pods-LoadingButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LoadingButton-dummy.m"; sourceTree = "<group>"; };
-		D670F0E960AF6B60BCA6012571B9764F /* Context.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Context.swift; path = EasyPeasy/Context.swift; sourceTree = "<group>"; };
-		DCBAA51294488631FDB62D286563FF5C /* Attribute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Attribute.swift; path = EasyPeasy/Attribute.swift; sourceTree = "<group>"; };
+		CF47720512C4346131C194E20264382B /* Attribute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Attribute.swift; path = EasyPeasy/Attribute.swift; sourceTree = "<group>"; };
+		D5E5E08DA683D4ECB27FBF63FA31CFF1 /* NSLayoutGuide+Easy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSLayoutGuide+Easy.swift"; path = "EasyPeasy/NSLayoutGuide+Easy.swift"; sourceTree = "<group>"; };
+		DA58A1B1EEE768B814B9C4A98FFDD1B5 /* DimensionAttribute+UIKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DimensionAttribute+UIKit.swift"; path = "EasyPeasy/DimensionAttribute+UIKit.swift"; sourceTree = "<group>"; };
+		DE10082AEECAB1B4F5E78ED3665FD1F3 /* EasyPeasy.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = EasyPeasy.modulemap; sourceTree = "<group>"; };
 		E04EAE5C34E8BE716D290733FBA14D82 /* Pods-LoadingButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LoadingButton-umbrella.h"; sourceTree = "<group>"; };
 		E644558AA4F853B91A9FC26EAD439736 /* Pods-LoadingButton-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LoadingButton-acknowledgements.markdown"; sourceTree = "<group>"; };
 		F318F225EE11DAB92F8E25B2F910D32F /* Pods-LoadingButton-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LoadingButton-frameworks.sh"; sourceTree = "<group>"; };
-		F48C21B07C1B3016168D38FF14066A05 /* DimensionAttribute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DimensionAttribute.swift; path = EasyPeasy/DimensionAttribute.swift; sourceTree = "<group>"; };
-		F766A7B2DAF9649F57A0DC93986267D1 /* EasyPeasy-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "EasyPeasy-dummy.m"; sourceTree = "<group>"; };
-		F9214DAB2446A9D84DC3EF7611257031 /* AttributedString.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AttributedString.swift; path = Source/AttributedString.swift; sourceTree = "<group>"; };
+		F321CD9A29751CCC7E6ABFF25AD8A503 /* DimensionAttribute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DimensionAttribute.swift; path = EasyPeasy/DimensionAttribute.swift; sourceTree = "<group>"; };
+		F53F391BDD5FD7CBC2619818E452AB3F /* Item+AppKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Item+AppKit.swift"; path = "EasyPeasy/Item+AppKit.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,77 +101,60 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		99F6ACCDBBC7F8E8D6F61F37608D400A /* Frameworks */ = {
+		809EA6B8F3BADF832607EEA588185902 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8EC7D899016655F8A8ABA24E5F2BBDE4 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E20137C19D638079C0ECC9BF74C1DC53 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9CA49A2B0BEAE9E56E7E698D95C7C6EE /* Foundation.framework in Frameworks */,
+				5014345E5D5FD3DEE60427285DE78520 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		179B56A6DE266BFA533549BADE874043 /* Products */ = {
+		171AED4D34C4498A031D4FE168CDB096 /* EasyPeasy */ = {
 			isa = PBXGroup;
 			children = (
-				380D90B787F89038B1441CE7992D5BFF /* EasyPeasy.framework */,
-				320F62725A0E4D5F3DC9DFEA606601EB /* Pods_LoadingButton.framework */,
-				9EC50FCBD7B1D395403B7474159422E7 /* TextAttributes.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		2461C43F79D14B41A332166983D0CE74 /* TextAttributes */ = {
-			isa = PBXGroup;
-			children = (
-				F9214DAB2446A9D84DC3EF7611257031 /* AttributedString.swift */,
-				696039F938A83CD8728172C8BFD967AE /* TextAttributes.h */,
-				5821CED1843067CC3BD3254B4744CEC0 /* TextAttributes.swift */,
-				4358CB826199132014C26FA7D4BD4084 /* Utilities.swift */,
-				9B2B42ED5E3D6C4E64381774C6F0750A /* Support Files */,
-			);
-			name = TextAttributes;
-			path = TextAttributes;
-			sourceTree = "<group>";
-		};
-		24ED37A61DBB5670A4BEF3F1510DFA9B /* EasyPeasy */ = {
-			isa = PBXGroup;
-			children = (
-				DCBAA51294488631FDB62D286563FF5C /* Attribute.swift */,
-				ACEF96FA29FE8D7EC478DF307284FB46 /* Collection+Easy.swift */,
-				79B3561E3E8EBBCE0AE07A54B4FBFC19 /* CompoundAttribute.swift */,
-				4631F4D918E7CB1A3F2DF43E505CDA38 /* Constant.swift */,
-				D670F0E960AF6B60BCA6012571B9764F /* Context.swift */,
-				F48C21B07C1B3016168D38FF14066A05 /* DimensionAttribute.swift */,
-				9868D0B6F9E7C7718439192184CDCC91 /* DimensionAttribute+AppKit.swift */,
-				9C8551CE85CC91069D0D245608D9C633 /* DimensionAttribute+UIKit.swift */,
-				6BCC28A3AFD6C0E00B094394D31D139F /* EasyPeasy.swift */,
-				0D47D24163B30F9E69FA80A05D5AE85E /* Item.swift */,
-				9D8B2E1E6E8B585D9CFF1A5336343C14 /* Item+AppKit.swift */,
-				38639D5F134930CA98A6CA6FAA03B61F /* Item+UIKit.swift */,
-				62B381D7AB1F74E5D17F33E448D1DD4A /* Node.swift */,
-				2C50C76FF14570DD17479C3A7B336BBF /* NSLayoutGuide+Easy.swift */,
-				38CBA9B311684281C1F398B5E4386335 /* NSView+Easy.swift */,
-				0C7D201945B00C7116165E73821C992A /* PositionAttribute.swift */,
-				58A834FEFE8C81BFA85962F65377B754 /* PositionAttribute+AppKit.swift */,
-				9688D0BCAFEFD5BAA70F398E7DE48562 /* PositionAttribute+UIKit.swift */,
-				3E277AB751025CCBDD818A3C88827B90 /* Priority.swift */,
-				827782125ED896C2CE3E73ED0025B70A /* ReferenceAttribute.swift */,
-				1892AB86BE9CE7BA52B3FF5FD4FA6417 /* UILayoutGuide+Easy.swift */,
-				916A02F911EDE0CBC9E165BEC61C5880 /* UIView+Easy.swift */,
-				F1AE714BDC9FED5879AD0F4E81365A4F /* Support Files */,
+				CF47720512C4346131C194E20264382B /* Attribute.swift */,
+				0BED75E2D914505929B7E8D7EB489012 /* Collection+Easy.swift */,
+				369E0BF0D92AC8CDC1104DB816FA7BCA /* CompoundAttribute.swift */,
+				7C042423496ABF6F39448FDE1E420B79 /* Constant.swift */,
+				8BEC6824F3FDD4D90827B61A3C126659 /* Context.swift */,
+				F321CD9A29751CCC7E6ABFF25AD8A503 /* DimensionAttribute.swift */,
+				88C00CBE818B56FB5A273558DFCBB5D7 /* DimensionAttribute+AppKit.swift */,
+				DA58A1B1EEE768B814B9C4A98FFDD1B5 /* DimensionAttribute+UIKit.swift */,
+				B0550C8A2952EA76569134D48FD50AAE /* EasyPeasy.swift */,
+				C5E97D44169F12F95D8A4D898ACEECF6 /* Item.swift */,
+				F53F391BDD5FD7CBC2619818E452AB3F /* Item+AppKit.swift */,
+				63B98E10FAC9116209DDDCD7C976E0F5 /* Item+UIKit.swift */,
+				6EF99674F45BF27E1DCFA338017CF5A1 /* Node.swift */,
+				D5E5E08DA683D4ECB27FBF63FA31CFF1 /* NSLayoutGuide+Easy.swift */,
+				1130DF1AD73DAC2E71BFD26D78B4E486 /* NSView+Easy.swift */,
+				BB923AAAFC121EA0269C423594C7AAD7 /* PositionAttribute.swift */,
+				4FAE89C02B37F9BD2D4C0A86E7C9A290 /* PositionAttribute+AppKit.swift */,
+				A0FBB8A0DF4E04D03920A7B193BBACC2 /* PositionAttribute+UIKit.swift */,
+				62470B9827DB490FF9CA19DF6E372653 /* Priority.swift */,
+				1FFF6E782F4193DD941D35A3136F2E48 /* ReferenceAttribute.swift */,
+				83109120B70867E6AB1487102DF8CCF6 /* UILayoutGuide+Easy.swift */,
+				B3D969B5AD6F8D8D36DC424543752195 /* UIView+Easy.swift */,
+				38D076B9008FD0E48F392FDBB8430EE0 /* Support Files */,
 			);
 			name = EasyPeasy;
 			path = EasyPeasy;
+			sourceTree = "<group>";
+		};
+		38D076B9008FD0E48F392FDBB8430EE0 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DE10082AEECAB1B4F5E78ED3665FD1F3 /* EasyPeasy.modulemap */,
+				02F94016182CCEC5D83EF3D37581B992 /* EasyPeasy.xcconfig */,
+				6D8024640261F4604D47D4C1F6770EF9 /* EasyPeasy-dummy.m */,
+				2122AB916328AC7B46D9A9484251DC66 /* EasyPeasy-prefix.pch */,
+				9377A39C852A1CC9C2A7885D2B2D3E45 /* EasyPeasy-umbrella.h */,
+				91ACF64847601D2CF038E4C491EBD132 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/EasyPeasy";
 			sourceTree = "<group>";
 		};
 		570B1260D131290FF9CB32281E8A70B1 /* Targets Support Files */ = {
@@ -220,33 +178,19 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				8BFBCEB8F561207E939E87C27B626DB0 /* Pods */,
-				179B56A6DE266BFA533549BADE874043 /* Products */,
+				E63F3490763DE7ED70EBC9801D011508 /* Pods */,
+				8AE8DD42B6E011C3D9DEA0E6B47B5E4C /* Products */,
 				570B1260D131290FF9CB32281E8A70B1 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		8BFBCEB8F561207E939E87C27B626DB0 /* Pods */ = {
+		8AE8DD42B6E011C3D9DEA0E6B47B5E4C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				24ED37A61DBB5670A4BEF3F1510DFA9B /* EasyPeasy */,
-				2461C43F79D14B41A332166983D0CE74 /* TextAttributes */,
+				3975CA7C7BD92DA1121A35F96A3BE365 /* EasyPeasy.framework */,
+				9F82A562DD5F4CAB03F0A6C1C10BFCE2 /* Pods_LoadingButton.framework */,
 			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		9B2B42ED5E3D6C4E64381774C6F0750A /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				8AE24F32340ABCE5B8ECB18CBDBF7B4E /* Info.plist */,
-				17B9422EC2DC1795A68F8DDEA7C5987A /* TextAttributes.modulemap */,
-				74F8E0B8CEDA5AB6980C31B5B15C8277 /* TextAttributes.xcconfig */,
-				49CA51871D1EECBF773A021445A69981 /* TextAttributes-dummy.m */,
-				672C986F748177368BC0514C2C91D7DF /* TextAttributes-prefix.pch */,
-				842C645DDD2D99DA7312AFD95907A608 /* TextAttributes-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/TextAttributes";
+			name = Products;
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -255,6 +199,14 @@
 				5E0D919E635D23B70123790B8308F8EF /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E63F3490763DE7ED70EBC9801D011508 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				171AED4D34C4498A031D4FE168CDB096 /* EasyPeasy */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		E7907F1AAAEA09937A5249DFB4FBE8CA /* Pods-LoadingButton */ = {
@@ -275,45 +227,22 @@
 			path = "Target Support Files/Pods-LoadingButton";
 			sourceTree = "<group>";
 		};
-		F1AE714BDC9FED5879AD0F4E81365A4F /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				35E78C5563D9C41BE6A24B3A0A9C14CC /* EasyPeasy.modulemap */,
-				985BED1806B63246C4CD17A017888BDC /* EasyPeasy.xcconfig */,
-				F766A7B2DAF9649F57A0DC93986267D1 /* EasyPeasy-dummy.m */,
-				ADFAFD1E728018053612BDC214C9CA92 /* EasyPeasy-prefix.pch */,
-				8F3D8222EBD2FC40D6B482957B8D0EAA /* EasyPeasy-umbrella.h */,
-				92A7AF99BCF27C3E80EA9663CCDC7B3D /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/EasyPeasy";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		5DA60C030295F0EB03B27DAE628A4703 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FABF7412B9503C6B2CB55B2152E7FF57 /* Pods-LoadingButton-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		79FB847772612CA4AD7D89F2234EB851 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BD925728D5D2958D8DDA3B8136EEA603 /* TextAttributes-umbrella.h in Headers */,
-				88886A6756C8FB57144C192F9E4C8F4A /* TextAttributes.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		E7B006574411C3EFBBFB2D42EBBF26E5 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				F4B645A507E1A7574F4E809CF3403DCB /* EasyPeasy-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4187F8DA8B129899FB0C6BC89CB8811 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA4DE171BA8269A3949B88512717EAE7 /* Pods-LoadingButton-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,43 +263,25 @@
 			);
 			name = EasyPeasy;
 			productName = EasyPeasy;
-			productReference = 380D90B787F89038B1441CE7992D5BFF /* EasyPeasy.framework */;
+			productReference = 3975CA7C7BD92DA1121A35F96A3BE365 /* EasyPeasy.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		C8B7B7AB9BC1712BCB03E6CF2B90F9ED /* Pods-LoadingButton */ = {
+		B2D05EDA5660DF7BE976FE8C7AE22987 /* Pods-LoadingButton */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 80DD4D9F45E606A0D806E4F3B1C3E20D /* Build configuration list for PBXNativeTarget "Pods-LoadingButton" */;
+			buildConfigurationList = B1B25E95B070997FC3FF52BD8DEAD623 /* Build configuration list for PBXNativeTarget "Pods-LoadingButton" */;
 			buildPhases = (
-				15E3D36725767D448535F054DC2BCB03 /* Sources */,
-				99F6ACCDBBC7F8E8D6F61F37608D400A /* Frameworks */,
-				5DA60C030295F0EB03B27DAE628A4703 /* Headers */,
+				9E55E7E7BF3D856FBCCD8B720DE4CE13 /* Sources */,
+				809EA6B8F3BADF832607EEA588185902 /* Frameworks */,
+				F4187F8DA8B129899FB0C6BC89CB8811 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				98740387323C801A908B32391F7320AD /* PBXTargetDependency */,
-				562C9860126581B9E8AD9D988EADA889 /* PBXTargetDependency */,
+				C7B005DB0DE3B6095679ECC2EE3A22DF /* PBXTargetDependency */,
 			);
 			name = "Pods-LoadingButton";
 			productName = "Pods-LoadingButton";
-			productReference = 320F62725A0E4D5F3DC9DFEA606601EB /* Pods_LoadingButton.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		EC89E9DAB30EA56235C4F30E56BCE60F /* TextAttributes */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 73395783651AD6D767A3B7AD1B546533 /* Build configuration list for PBXNativeTarget "TextAttributes" */;
-			buildPhases = (
-				86058094A4603021193307284D180585 /* Sources */,
-				E20137C19D638079C0ECC9BF74C1DC53 /* Frameworks */,
-				79FB847772612CA4AD7D89F2234EB851 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = TextAttributes;
-			productName = TextAttributes;
-			productReference = 9EC50FCBD7B1D395403B7474159422E7 /* TextAttributes.framework */;
+			productReference = 9F82A562DD5F4CAB03F0A6C1C10BFCE2 /* Pods_LoadingButton.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -390,26 +301,17 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 179B56A6DE266BFA533549BADE874043 /* Products */;
+			productRefGroup = 8AE8DD42B6E011C3D9DEA0E6B47B5E4C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				1F2F10D708910773191660761F9C8163 /* EasyPeasy */,
-				C8B7B7AB9BC1712BCB03E6CF2B90F9ED /* Pods-LoadingButton */,
-				EC89E9DAB30EA56235C4F30E56BCE60F /* TextAttributes */,
+				B2D05EDA5660DF7BE976FE8C7AE22987 /* Pods-LoadingButton */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		15E3D36725767D448535F054DC2BCB03 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4BF06936AE389FEE6B718E7F3DE089DA /* Pods-LoadingButton-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		40B0FB2ACAF247904C4266D837DD9773 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -440,38 +342,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		86058094A4603021193307284D180585 /* Sources */ = {
+		9E55E7E7BF3D856FBCCD8B720DE4CE13 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B7AF73F7D293A4D7F88A013272987FBB /* AttributedString.swift in Sources */,
-				4507027ADE0D775BD5DC6DD67A19989E /* TextAttributes-dummy.m in Sources */,
-				293831B1F84C49B8030AE3E3BE13F5DE /* TextAttributes.swift in Sources */,
-				18CCE20473E2073D7499D885A159C3CA /* Utilities.swift in Sources */,
+				2115FC0DC11136340252F215F7EB4272 /* Pods-LoadingButton-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		562C9860126581B9E8AD9D988EADA889 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = TextAttributes;
-			target = EC89E9DAB30EA56235C4F30E56BCE60F /* TextAttributes */;
-			targetProxy = 83BF5BA203E4CE0D8C37B13AAF2C1CE1 /* PBXContainerItemProxy */;
-		};
-		98740387323C801A908B32391F7320AD /* PBXTargetDependency */ = {
+		C7B005DB0DE3B6095679ECC2EE3A22DF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = EasyPeasy;
 			target = 1F2F10D708910773191660761F9C8163 /* EasyPeasy */;
-			targetProxy = 1354BE9DAABBFBDCC6610833962190AF /* PBXContainerItemProxy */;
+			targetProxy = 00873CDB6255987BFC16777E577B8D2F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		081A2A1733D8B773FAED39502ADF4EAE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 985BED1806B63246C4CD17A017888BDC /* EasyPeasy.xcconfig */;
+			baseConfigurationReference = 02F94016182CCEC5D83EF3D37581B992 /* EasyPeasy.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -494,43 +387,6 @@
 				MODULEMAP_FILE = "Target Support Files/EasyPeasy/EasyPeasy.modulemap";
 				PRODUCT_MODULE_NAME = EasyPeasy;
 				PRODUCT_NAME = EasyPeasy;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		17A2825A2C08E1D862362D90A7C08B56 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 74F8E0B8CEDA5AB6980C31B5B15C8277 /* TextAttributes.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/TextAttributes/TextAttributes-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/TextAttributes/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/TextAttributes/TextAttributes.modulemap";
-				PRODUCT_MODULE_NAME = TextAttributes;
-				PRODUCT_NAME = TextAttributes;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -606,7 +462,7 @@
 			};
 			name = Debug;
 		};
-		76C5B9470CF2925515E8B6219D8AD79F /* Debug */ = {
+		7002F34AB7F73EDD6147749CCD061C32 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A1418297B04EAD17F8E033DD92D01A72 /* Pods-LoadingButton.debug.xcconfig */;
 			buildSettings = {
@@ -646,9 +502,49 @@
 			};
 			name = Debug;
 		};
+		7B207E768C36A0B98D87F32B8164C3D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29B6A8C92A680DD2A6B809621CA9E98B /* Pods-LoadingButton.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LoadingButton/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LoadingButton/Pods-LoadingButton.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		97E6762065CA214F00CEA241645EEBFA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 985BED1806B63246C4CD17A017888BDC /* EasyPeasy.xcconfig */;
+			baseConfigurationReference = 02F94016182CCEC5D83EF3D37581B992 /* EasyPeasy.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -740,82 +636,6 @@
 			};
 			name = Release;
 		};
-		F9001AFFB2DF76BE74D8BEAC9E77D992 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 74F8E0B8CEDA5AB6980C31B5B15C8277 /* TextAttributes.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/TextAttributes/TextAttributes-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/TextAttributes/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/TextAttributes/TextAttributes.modulemap";
-				PRODUCT_MODULE_NAME = TextAttributes;
-				PRODUCT_NAME = TextAttributes;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		FFD8961136363867A8385412AFAE36DD /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 29B6A8C92A680DD2A6B809621CA9E98B /* Pods-LoadingButton.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-LoadingButton/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-LoadingButton/Pods-LoadingButton.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -828,20 +648,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		73395783651AD6D767A3B7AD1B546533 /* Build configuration list for PBXNativeTarget "TextAttributes" */ = {
+		B1B25E95B070997FC3FF52BD8DEAD623 /* Build configuration list for PBXNativeTarget "Pods-LoadingButton" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F9001AFFB2DF76BE74D8BEAC9E77D992 /* Debug */,
-				17A2825A2C08E1D862362D90A7C08B56 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		80DD4D9F45E606A0D806E4F3B1C3E20D /* Build configuration list for PBXNativeTarget "Pods-LoadingButton" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				76C5B9470CF2925515E8B6219D8AD79F /* Debug */,
-				FFD8961136363867A8385412AFAE36DD /* Release */,
+				7002F34AB7F73EDD6147749CCD061C32 /* Debug */,
+				7B207E768C36A0B98D87F32B8164C3D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

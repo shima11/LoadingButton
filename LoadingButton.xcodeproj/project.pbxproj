@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B55137B70810E83E5491187D /* Pods_LoadingButton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 350C18C8DE653F1B83ADAAB7 /* Pods_LoadingButton.framework */; };
 		D4307B7E214BBDCE006E91B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4307B7D214BBDCE006E91B1 /* AppDelegate.swift */; };
 		D4307B80214BBDCE006E91B1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4307B7F214BBDCE006E91B1 /* ViewController.swift */; };
 		D4307B83214BBDCE006E91B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4307B81214BBDCE006E91B1 /* Main.storyboard */; };
@@ -15,9 +16,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		350C18C8DE653F1B83ADAAB7 /* Pods_LoadingButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoadingButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		59FB62481C8D390AAADE5841 /* Pods-LoadingButton.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoadingButton.release.xcconfig"; path = "Pods/Target Support Files/Pods-LoadingButton/Pods-LoadingButton.release.xcconfig"; sourceTree = "<group>"; };
+		BD0D0E188BB11B22480AC1BC /* Pods-LoadingButton.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoadingButton.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LoadingButton/Pods-LoadingButton.debug.xcconfig"; sourceTree = "<group>"; };
 		D4307B7A214BBDCE006E91B1 /* LoadingButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoadingButton.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4307B7D214BBDCE006E91B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D4307B7F214BBDCE006E91B1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D4307B7F214BBDCE006E91B1 /* ViewController.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; tabWidth = 2; };
 		D4307B82214BBDCE006E91B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D4307B84214BBDD0006E91B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D4307B87214BBDD0006E91B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B55137B70810E83E5491187D /* Pods_LoadingButton.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		169D175D0D49CD3F209F63E0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				350C18C8DE653F1B83ADAAB7 /* Pods_LoadingButton.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		93A227CDF0AF042FB375EB3C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BD0D0E188BB11B22480AC1BC /* Pods-LoadingButton.debug.xcconfig */,
+				59FB62481C8D390AAADE5841 /* Pods-LoadingButton.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D4307B71214BBDCD006E91B1 = {
 			isa = PBXGroup;
 			children = (
 				D4307B7C214BBDCE006E91B1 /* LoadingButton */,
 				D4307B7B214BBDCE006E91B1 /* Products */,
+				93A227CDF0AF042FB375EB3C /* Pods */,
+				169D175D0D49CD3F209F63E0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D4307B8C214BBDD0006E91B1 /* Build configuration list for PBXNativeTarget "LoadingButton" */;
 			buildPhases = (
+				0C4BD8318C129A6E108713B5 /* [CP] Check Pods Manifest.lock */,
 				D4307B76214BBDCD006E91B1 /* Sources */,
 				D4307B77214BBDCD006E91B1 /* Frameworks */,
 				D4307B78214BBDCD006E91B1 /* Resources */,
+				8FD1AD0ADEB60158FAD5F022 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +155,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0C4BD8318C129A6E108713B5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LoadingButton-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8FD1AD0ADEB60158FAD5F022 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-LoadingButton/Pods-LoadingButton-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/EasyPeasy/EasyPeasy.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EasyPeasy.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LoadingButton/Pods-LoadingButton-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D4307B76214BBDCD006E91B1 /* Sources */ = {
@@ -278,6 +343,7 @@
 		};
 		D4307B8D214BBDD0006E91B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD0D0E188BB11B22480AC1BC /* Pods-LoadingButton.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -295,6 +361,7 @@
 		};
 		D4307B8E214BBDD0006E91B1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59FB62481C8D390AAADE5841 /* Pods-LoadingButton.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

@@ -8,6 +8,5 @@ target 'LoadingButton' do
   # Pods for LoadingButton
 
   pod 'EasyPeasy'
-  pod 'TextAttributes'
 
 end
