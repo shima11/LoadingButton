@@ -1,0 +1,20 @@
+PODS:
+  - EasyPeasy (1.7.0)
+  - TextAttributes (1.0)
+
+DEPENDENCIES:
+  - EasyPeasy
+  - TextAttributes
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - EasyPeasy
+    - TextAttributes
+
+SPEC CHECKSUMS:
+  EasyPeasy: 2f2785ed78c6f9e9045221f2ff317730e7321bff
+  TextAttributes: 45b2713a1d174c377d320b51129c304eac381638
+
+PODFILE CHECKSUM: e30aa5d8f503cb3ae775552a8f5726130bacb196
+
+COCOAPODS: 1.5.3
