@@ -19,31 +19,44 @@ fileprivate final class LoadingButton: UIControl {
   // TODO: 実装メモ
 
   enum Style {
-    case title(title: String?)
+    case title(title: NSAttributedString?)
     case icon(image: UIImage?)
-    case titleIcon(title: String?, image: UIImage?)
+    case titleIcon(title: NSAttributedString?, image: UIImage?)
   }
-
 
 
   fileprivate var loadingState: LoadingButton.State = .completed {
     didSet {
       switch loadingState {
       case .completed:
+        isEnabled = true
         indicatorView.stopAnimating()
         titleLabel.isHidden = false
       case .loading:
+        isEnabled = false
         indicatorView.startAnimating()
         titleLabel.isHidden = true
       }
     }
   }
 
-  let indicatorView = UIActivityIndicatorView(activityIndicatorStyle: .gray)
+  override var backgroundColor: UIColor? {
+    didSet {
+      var grayScale: CGFloat = 0
+      var alpha: CGFloat = 0
+      guard let isWhite = backgroundColor?.getWhite(&grayScale, alpha: &alpha) else { return }
+      print("gray scale:", grayScale)
+      print("alpha:", alpha)
+      print("is white:", isWhite)
+      indicatorView.activityIndicatorViewStyle = isWhite ? .gray : .white
+    }
+  }
+
+  let indicatorView = UIActivityIndicatorView()
   let titleLabel = UILabel()
   let imageView = UIImageView()
 
-  init(title: String?, image: UIImage?) {
+  init(title: NSAttributedString?, image: UIImage?) {
     super.init(frame: .zero)
 
     // TODO: このままだと文字か画像のどっちかをCenterに表示する想定になってしまう
@@ -52,7 +65,7 @@ fileprivate final class LoadingButton: UIControl {
     addSubview(indicatorView)
     addSubview(imageView)
 
-    titleLabel.text = title
+    titleLabel.attributedText = title
     imageView.image = image
     imageView.contentMode = .center
 
@@ -85,58 +98,102 @@ fileprivate final class LoadingButton: UIControl {
   }
 
   override func sendAction(_ action: Selector, to target: Any?, for event: UIEvent?) {
-    print("event:", event ?? "nil")
+    print("send action:")//, event ?? "nil")
     super.sendAction(action, to: target, for: event)
   }
 
   override func layoutIfNeeded() {
-    super.layoutIfNeeded()
     print("layout if needed")
+    super.layoutIfNeeded()
   }
 
   override func layoutSubviews() {
-    super.layoutSubviews()
     print("layout subviews")
+    super.layoutSubviews()
   }
 
   override func layoutMarginsDidChange() {
-    super.layoutMarginsDidChange()
     print("layout margins did change")
+    super.layoutMarginsDidChange()
   }
 
   override func layoutSublayers(of layer: CALayer) {
-    super.layoutSublayers(of: layer)
     print("layout sublayouers:", layer)
+    super.layoutSublayers(of: layer)
   }
 
   override func setNeedsLayout() {
-    super.setNeedsLayout()
     print("set needs layout")
+    super.setNeedsLayout()
   }
 
   override func display(_ layer: CALayer) {
-    super.display(layer)
     print("display:", layer)
+    super.display(layer)
   }
 
   override func willMove(toSuperview newSuperview: UIView?) {
-    super.willMove(toSuperview: newSuperview)
     print("will move to super view:")
+    super.willMove(toSuperview: newSuperview)
   }
 
   override func didMoveToSuperview() {
-    super.didMoveToSuperview()
     print("did move to super view")
+    super.didMoveToSuperview()
   }
 
   override func willMove(toWindow newWindow: UIWindow?) {
-    super.willMove(toWindow: newWindow)
     print("will move to window:")
+    super.willMove(toWindow: newWindow)
   }
 
   override func didMoveToWindow() {
-    super.didMoveToWindow()
     print("did move to window")
+    super.didMoveToWindow()
+  }
+
+  override func layerWillDraw(_ layer: CALayer) {
+    print("layer will draw")
+    super.layerWillDraw(layer)
+  }
+
+  override func updateConstraints() {
+    print("update constraints")
+    super.updateConstraints()
+  }
+
+  override func setNeedsUpdateConstraints() {
+    print("set needs updaet constraints")
+    super.setNeedsUpdateConstraints()
+  }
+
+  override func setNeedsDisplay() {
+    print("set needs display")
+    super.setNeedsDisplay()
+  }
+
+  override var isTracking: Bool {
+    return true
+  }
+
+  override func beginTracking(_ touch: UITouch, with event: UIEvent?) -> Bool {
+    print("begin tracking:======")//, touch, event ?? "nil")
+    return super.beginTracking(touch, with: event)
+  }
+
+  override func continueTracking(_ touch: UITouch, with event: UIEvent?) -> Bool {
+    print("continue tracking:")//, touch, event ?? "nil")
+    return super.continueTracking(touch, with: event)
+  }
+
+  override func endTracking(_ touch: UITouch?, with event: UIEvent?) {
+    print("end tracking:======")//, touch ?? "nil", event ?? "nil")
+    super.endTracking(touch, with: event)
+  }
+
+  override func cancelTracking(with event: UIEvent?) {
+    print("cancel tracking:")//, event ?? "nil")
+    super.cancelTracking(with: event)
   }
 
   required init?(coder aDecoder: NSCoder) {
@@ -151,8 +208,17 @@ class ViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
 
-    let loadingButton = LoadingButton(title: "Send", image: nil)
-    loadingButton.backgroundColor = .lightGray
+    let loadingButton = LoadingButton(
+      title: NSAttributedString(
+        string: "Send",
+        attributes: [
+          .font : UIFont.systemFont(ofSize: 18, weight: .bold),
+          .foregroundColor : UIColor.darkGray
+        ]
+      ),
+      image: nil
+    )
+    loadingButton.backgroundColor = .white
     view.addSubview(loadingButton)
 
     loadingButton.layer.cornerRadius = 30
