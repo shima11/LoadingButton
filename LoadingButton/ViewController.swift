@@ -86,8 +86,12 @@ fileprivate final class LoadingButton: UIControl {
   }
 
   @objc func didTap() {
+
     print("did tap")
+
     loadingState = .loading
+
+    action?()
 
     #if DEBUG
     DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
@@ -95,6 +99,12 @@ fileprivate final class LoadingButton: UIControl {
       self.completed()
     }
     #endif
+  }
+
+  private var action: (() -> Void)?
+
+  func touchUpInside(action: (() -> Void)? = nil) {
+    self.action = action
   }
 
   override func sendAction(_ action: Selector, to target: Any?, for event: UIEvent?) {
@@ -230,6 +240,10 @@ class ViewController: UIViewController {
       Center()
     )
 
+    loadingButton.touchUpInside {
+      print("loading button touch up inside")
+    }
+    
   }
 
 }
