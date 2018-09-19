@@ -9,7 +9,7 @@
 import UIKit
 import EasyPeasy
 
-fileprivate final class LoadingButton: UIControl {
+fileprivate final class LoadingButton1: UIControl {
 
   enum State {
     case loading
@@ -25,7 +25,7 @@ fileprivate final class LoadingButton: UIControl {
   }
 
 
-  fileprivate var loadingState: LoadingButton.State = .completed {
+  fileprivate var loadingState: LoadingButton1.State = .completed {
     didSet {
       switch loadingState {
       case .completed:
@@ -213,14 +213,100 @@ fileprivate final class LoadingButton: UIControl {
 }
 
 
+private final class LoadingButton2: UIView {
+
+  enum State {
+    case loading
+    case completed
+  }
+
+  private var loadingState: LoadingButton1.State = .completed {
+    didSet {
+      switch loadingState {
+      case .loading:
+        indicatorView.startAnimating()
+        indicatorView.isHidden = false
+        button.isHidden = true
+      case .completed:
+        indicatorView.stopAnimating()
+        indicatorView.isHidden = true
+        button.isHidden = false
+      }
+    }
+  }
+
+  private let button = UIButton(type: .system)
+  private let indicatorView = UIActivityIndicatorView(activityIndicatorStyle: .gray)
+  private var action: (() -> Void)?
+
+  override init(frame: CGRect) {
+
+    super.init(frame: frame)
+
+    addSubview(button)
+    addSubview(indicatorView)
+
+    indicatorView.easy.layout(
+      Center()
+    )
+
+    button.easy.layout(
+      Edges(),
+      Center()
+    )
+
+    button.addTarget(self, action: #selector(didTap), for: .touchUpInside)
+
+  }
+
+  required init?(coder aDecoder: NSCoder) {
+    fatalError("init(coder:) has not been implemented")
+  }
+
+  func setTitle(title: NSAttributedString) {
+    button.setAttributedTitle(title, for: .normal)
+  }
+
+  func loading() {
+    loadingState = .loading
+  }
+
+  func completed() {
+    loadingState = .completed
+  }
+
+  func touchUpInside(action: (() -> Void)? = nil) {
+    self.action = action
+  }
+
+  @objc
+  private func didTap() {
+
+    print("did tap")
+
+    loadingState = .loading
+
+    action?()
+
+    #if DEBUG
+    DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+      print("execute")
+      self.completed()
+    }
+    #endif
+  }
+}
+
+
+
 class ViewController: UIViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
 
-    let loadingButton = LoadingButton(
+    let loadingButton1 = LoadingButton1(
       title: NSAttributedString(
-        string: "Send",
+        string: "Send1",
         attributes: [
           .font : UIFont.systemFont(ofSize: 18, weight: .bold),
           .foregroundColor : UIColor.darkGray
@@ -228,22 +314,51 @@ class ViewController: UIViewController {
       ),
       image: nil
     )
-    loadingButton.backgroundColor = .white
-    view.addSubview(loadingButton)
+    loadingButton1.backgroundColor = .white
+    view.addSubview(loadingButton1)
 
-    loadingButton.layer.cornerRadius = 30
-    loadingButton.clipsToBounds = true
+    loadingButton1.layer.cornerRadius = 30
+    loadingButton1.clipsToBounds = true
 
-    loadingButton.easy.layout(
+    loadingButton1.easy.layout(
       Width(120),
       Height(60),
-      Center()
+      CenterX(),
+      CenterY(-60)
     )
 
-    loadingButton.touchUpInside {
-      print("loading button touch up inside")
+    loadingButton1.touchUpInside {
+      print("loading button1 touch up inside")
     }
-    
+
+
+    let loadingButton2 = LoadingButton2()
+    loadingButton2.backgroundColor = .white
+    loadingButton2.setTitle(
+      title: NSAttributedString(
+        string: "Send2",
+        attributes: [
+          .font : UIFont.systemFont(ofSize: 18, weight: .bold),
+          .foregroundColor : UIColor.darkGray
+        ]
+      )
+    )
+    view.addSubview(loadingButton2)
+
+    loadingButton2.layer.cornerRadius = 30
+    loadingButton2.clipsToBounds = true
+
+    loadingButton2.easy.layout(
+      Width(120),
+      Height(60),
+      CenterX(),
+      CenterY(60)
+    )
+
+    loadingButton2.touchUpInside {
+      print("loading button2 touch up inside")
+    }
+
   }
 
 }
