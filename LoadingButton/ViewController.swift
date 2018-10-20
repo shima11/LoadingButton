@@ -11,7 +11,7 @@ import EasyPeasy
 
 fileprivate final class LoadingButton1: UIControl {
 
-  enum State {
+  enum LoadingState {
     case loading
     case completed
   }
@@ -25,7 +25,7 @@ fileprivate final class LoadingButton1: UIControl {
   }
 
 
-  fileprivate var loadingState: LoadingButton1.State = .completed {
+  fileprivate var loadingState: LoadingButton1.LoadingState = .completed {
     didSet {
       switch loadingState {
       case .completed:
@@ -48,7 +48,7 @@ fileprivate final class LoadingButton1: UIControl {
       print("gray scale:", grayScale)
       print("alpha:", alpha)
       print("is white:", isWhite)
-      indicatorView.activityIndicatorViewStyle = isWhite ? .gray : .white
+      indicatorView.style = isWhite ? .gray : .white
     }
   }
 
@@ -94,7 +94,7 @@ fileprivate final class LoadingButton1: UIControl {
     action?()
 
     #if DEBUG
-    DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+    DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
       print("execute")
       self.completed()
     }
@@ -220,7 +220,7 @@ private final class LoadingButton2: UIView {
     case completed
   }
 
-  private var loadingState: LoadingButton1.State = .completed {
+  private var loadingState: LoadingButton2.State = .completed {
     didSet {
       switch loadingState {
       case .loading:
@@ -236,7 +236,7 @@ private final class LoadingButton2: UIView {
   }
 
   private let button = UIButton(type: .system)
-  private let indicatorView = UIActivityIndicatorView(activityIndicatorStyle: .gray)
+  private let indicatorView = UIActivityIndicatorView(style: .gray)
   private var action: (() -> Void)?
 
   override init(frame: CGRect) {
@@ -289,7 +289,7 @@ private final class LoadingButton2: UIView {
     action?()
 
     #if DEBUG
-    DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+    DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
       print("execute")
       self.completed()
     }
@@ -309,17 +309,20 @@ class ViewController: UIViewController {
         string: "Send1",
         attributes: [
           .font : UIFont.systemFont(ofSize: 18, weight: .bold),
-          .foregroundColor : UIColor.darkGray
+          .foregroundColor : UIColor(red: 0, green: 122 / 255, blue: 1, alpha: 1)
         ]
       ),
       image: nil
     )
-    loadingButton1.backgroundColor = .white
-    view.addSubview(loadingButton1)
-
+    loadingButton1.backgroundColor = UIColor.groupTableViewBackground
     loadingButton1.layer.cornerRadius = 30
     loadingButton1.clipsToBounds = true
+    loadingButton1.touchUpInside {
+      print("loading button1 touch up inside")
+    }
 
+    view.addSubview(loadingButton1)
+    
     loadingButton1.easy.layout(
       Width(120),
       Height(60),
@@ -327,26 +330,24 @@ class ViewController: UIViewController {
       CenterY(-60)
     )
 
-    loadingButton1.touchUpInside {
-      print("loading button1 touch up inside")
-    }
-
 
     let loadingButton2 = LoadingButton2()
-    loadingButton2.backgroundColor = .white
     loadingButton2.setTitle(
       title: NSAttributedString(
         string: "Send2",
         attributes: [
           .font : UIFont.systemFont(ofSize: 18, weight: .bold),
-          .foregroundColor : UIColor.darkGray
+          .foregroundColor : UIColor(red: 0, green: 122 / 255, blue: 1, alpha: 1)
         ]
       )
     )
-    view.addSubview(loadingButton2)
-
+    loadingButton2.backgroundColor = UIColor.groupTableViewBackground
     loadingButton2.layer.cornerRadius = 30
     loadingButton2.clipsToBounds = true
+    loadingButton2.touchUpInside {
+      print("loading button2 touch up inside")
+    }
+    view.addSubview(loadingButton2)
 
     loadingButton2.easy.layout(
       Width(120),
@@ -354,10 +355,6 @@ class ViewController: UIViewController {
       CenterX(),
       CenterY(60)
     )
-
-    loadingButton2.touchUpInside {
-      print("loading button2 touch up inside")
-    }
 
   }
 
