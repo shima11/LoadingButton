@@ -2,6 +2,7 @@
 
 # OverView
 
-![](demo.gif)
+# ![](demo.gif)
+<img src="demo.gif" width="300">
 
 # Usage
